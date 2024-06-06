@@ -1,0 +1,834 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+  background: #F6F7F8 0% 0% no-repeat padding-box;
+}
+.nav-bar {
+  margin-top: -15px;
+}
+.nav-bar1 {
+  display: flex;
+  margin: 18px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+}
+.nav-bar-logo img {
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 211px;
+  height: 48px;
+  opacity: 1;
+}
+.nav-bar-menu ul {
+  display: flex;
+  margin-top: 23px;
+  margin-left: 73px;
+  width: 663px;
+  height: 63px;
+  list-style-type: none;
+}
+.nav-bar-menu ul li {
+  display: flex;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.nav-bar-menu ul li img {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 16px;
+  height: 17px;
+  background-color: transparent;
+}
+.nav-bar-menu ul li.active {
+  width: 122px;
+  height: 41px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px; 
+}
+.nav-bar-profile {
+  display: flex; 
+}
+.nav-bar-profile img {
+  margin-top: 32px;
+  left: 1309px;
+  width: 44px;
+  height: 44px;
+}
+.nav-bar-profile-text h5 {
+  margin-top: 35px;
+  margin-left: 10px;
+  width: 119px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.nav-bar-profile-text h6 {
+  margin-top: -24px;
+  margin-left: 10px;
+  width: 129px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.nav-bar-settings {
+  background: none;
+  border: none;
+}
+.nav-bar-settings img {
+  margin-top: 4px;
+  width: 19px;
+  height: 20px;
+}
+.nav-bar-dots {
+  background: none;
+  border: none;
+}
+.nav-bar-dots img {
+  margin-top: 4px;
+  width: 4px;
+  height: 20px;
+}
+.App-body {
+  display: flex;
+  margin-top: 102px;
+  margin-left: 18px;
+}
+.patientlist-heading1{
+  display: flex;
+}
+.patientlist-heading {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+}
+.patientlist-heading ul {
+  width: 327px;
+  height: 954px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.patientlist-heading ul::-webkit-scrollbar {
+  width: 6px;
+  height: 941px;
+  background: #E3E4E6 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  
+}
+.patientlist-heading ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  margin-left: 1px;
+  height: 20px;
+  background-color: #707070;
+}
+.selected .card {
+  padding: 10px;
+  background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
+  background: #D8FCF7 0% 0% no-repeat padding-box;
+}
+.patientlist-title {
+  display: flex;
+}
+.patientlist-title h3 {
+  margin-top: 42px;
+  margin-left: 38px;
+  width: 100px;
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.patientlist-title img {
+  margin-top: 42px;
+  margin-left: 197px;
+  width: 18px;
+  height: 18px;
+}
+.PatientList {
+  margin-top: 10px;
+  list-style-type: none;
+}
+.card {
+  display: flex;
+  margin-top: 10px;
+}
+.PatientPic img {
+  width: 48px;
+  height: 48px;
+}
+.patientName h3 {
+  margin-top: 0px;
+  margin-left: 28px;
+  width: 137px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635; 
+}
+
+.patientGender p {
+  margin-top: -11px;
+  margin-left: 28px;
+  width: 66px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-707070);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+}
+.profile-dot {
+  border: none;
+  background: none;
+}
+.profile-dot img {
+  margin-left: 57px;
+  width: 18px;
+  height: 4px; 
+}
+.patient-diagonstic-history {
+  margin-left: 37px;
+  width: 596px;
+  height: 673px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+}
+.patient-diagonstic-history h3 {
+  padding-top: 32px;
+  margin-left: 37px;
+  width: 307px;
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.diagnostic-history-chart {
+  margin-top: 5px;
+  margin-left: 17px;
+  width: 558px;
+  height: 288px;
+  background: #F4F0FE 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+.diagnostic-history-chart-heading {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 20px;
+  height: 48px;
+}
+.diagnostic-history-chart-heading h4 {
+  width: 231px;
+  height: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 18px/24px Manrope
+}
+.diagnostic-history-chart-heading select {
+  border: none;
+  margin-top: 22px;
+  width: 150px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: right;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  background: #F4F0FE 0% 0% no-repeat padding-box;
+}
+.history-chart {
+  display: flex;
+}
+.history-chart1 {
+  width: 417px;
+  height: 587px;
+}
+.diagnostic-history-chart-details {
+  margin-top: -47px;
+  margin-left: 10px;
+}
+.systolic-chart {
+  border-bottom: 1px solid black;
+  width: 100px;
+}
+.systolic-chart-details {
+  display: flex;
+}
+.systolic-chart-color {
+  margin-top: 28px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: #E66FD2 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+.systolic-chart-details p {
+  margin-top: 23px;
+  margin-left: 5px;
+  width: 55px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.systolic-chart h4 {
+  margin-top: -8px;
+  width: 38px;
+  height: 30px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 22px/30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.systolic-chart-text {
+  display: flex;
+  margin-top: -15px;
+}
+.systolic-chart-text img {
+  top: 303px;
+  left: 939px;
+  width: 10px;
+  height: 5px;
+  transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.systolic-chart-text p {
+  margin-top: -6px;
+  margin-left: 7px;
+  width: 121px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.Diastolic-chart {
+  width: 100px;
+}
+.Diastolic-chart-details {
+  display: flex;
+}
+.Diastolic-chart-color {
+  margin-top: 28px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: #8C6FE6 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+.Diastolic-chart-details p {
+  margin-top: 23px;
+  margin-left: 5px;
+  width: 55px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.Diastolic-chart h4 {
+  margin-top: -8px;
+  width: 38px;
+  height: 30px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 22px/30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.diagnostic-history-card {
+  display: flex;
+  margin-left: 37px;
+  margin-top: 32px;
+  width: 530px;
+}
+.history-card1 {
+  width: 168px;
+  height: 242px;
+  background: #E0F3FA 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+.history-card1 img {
+  margin-top: 29px;
+  margin-left: 23px;
+  width: 96px;
+  height: 96px;
+  opacity: 1; 
+  border-radius: 50%;
+}
+.history-card1 h6 {
+  margin-top: 11px;
+  margin-left: 23px;
+  width: 125px;
+  height: 22px;
+  font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 16px/22px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.history-card1 h3 {
+  margin-top: -55px;
+  margin-left: 23px;
+  width: 109px;
+  height: 41px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 30px/41px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card1 p {
+  margin-top: -30px;
+  margin-left: 23px;
+  width: 46px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card2 {
+  margin-left: 20px;
+  width: 168px;
+  height: 242px;
+  background: #FFE6E9 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+.history-card2 img {
+  margin-top: 29px;
+  margin-left: 23px;
+  width: 96px;
+  height: 96px;
+  opacity: 1; 
+  border-radius: 50%;
+}
+.history-card2 h6 {
+  margin-top: 11px;
+  margin-left: 23px;
+  width: 125px;
+  height: 22px;
+  font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 16px/22px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.history-card2 h3 {
+  margin-top: -55px;
+  margin-left: 23px;
+  width: 109px;
+  height: 41px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 30px/41px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card2 p {
+  margin-top: -30px;
+  margin-left: 23px;
+  width: 46px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card3 {
+  margin-left: 20px;
+  width: 188px;
+  height: 242px;
+  background: #FFE6F1 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+.history-card3 img {
+  margin-top: 29px;
+  margin-left: 23px;
+  width: 96px;
+  height: 96px;
+  opacity: 1; 
+  border-radius: 50%;
+}
+.history-card3 h6 {
+  margin-top: 11px;
+  margin-left: 23px;
+  width: 125px;
+  height: 22px;
+  font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 16px/22px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.history-card3 h3 {
+  margin-top: -65px;
+  margin-left: 23px;
+  width: 109px;
+  height: 41px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 30px/41px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card3 p {
+  margin-top: -45px;
+  margin-left: -10px;
+  width: 207px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.history-card3 p img {
+  width: 10px;
+  height: 5px;
+  background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+  background: #072635 0% 0% no-repeat padding-box;
+}
+.diagnostic-history-list {
+  margin-top: 27px;
+  margin-left: 37px;
+  width: 596px;
+  height: 349px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+}
+.diagnostic-history-list h3 {
+  padding-top: 47px;
+  margin-left: 37px;
+  width: 176px;
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.diagnostic-history-list table {
+  margin-left: 47px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 230px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.tableContainer::-webkit-scrollbar {
+  width: 6px;
+  height: 941px;
+  background: #E3E4E6 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  
+}
+.tableContainer::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  margin-left: 1px;
+  height: 20px;
+  background-color: #707070;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-left: 53px;
+  width: 506px;
+  height: 79px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+
+.tableRow.header {
+  margin-top: 20px;
+  margin-left: 37px;
+  width: 526px;
+  height: 48px;
+  background: #F6F7F8 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+
+.tableCell {
+  flex: 1;
+  padding: 10px;
+}
+
+.tableCell:nth-child(1) {
+  flex: 2; 
+}
+
+.tableCell:nth-child(2) {
+  flex: 3; 
+}
+
+.tableCell:nth-child(3) {
+  flex: 1; 
+}
+
+.patient-profile {
+  margin-top: 8px;
+  margin-left: 36px;
+}
+.patient-profile-details {
+  width: 267px;
+  height: 740px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+}
+.patient-profile-details img {
+  margin-top: 30px;
+  margin-left: 59px;
+  width: 150px;
+  height: 150px;
+}
+.profile-name h3 {
+  margin-top: 34px;
+  margin-left: 60px;
+  width: 164px;
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: center;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635; 
+}
+.profile-details {
+  display: flex;
+  margin-left: 15px;
+}
+.profile-details img {
+  margin-top: 29px;
+  margin-left: 8px;
+  width: 42px;
+  height: 42px;
+}
+.profile-details-text {
+  margin-top: 19px;
+  margin-left: 14px;
+  width: 108px;
+  height: 42px;
+}
+.profile-details-text p {
+  width: 204px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.profile-details-text h6 {
+  margin-top: -12px;
+  width: 208px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+.profile-more-details button {
+  margin-top: 45px;
+  margin-left: 59px;
+  width: 160px;
+  height: 41px;
+  background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  border: none;
+}
+.profile-lab-results {
+  margin-top: 60px;
+  width: 267px;
+  height: 256px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+}
+.profile-lab-results h3 {
+  padding-top: 30px;
+  margin-left: 35px;
+  width: 137px;
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+.profile-lab-results ul {
+  margin-top: 29px;
+  margin-left: 0px;
+  width: 220px;
+  height: 150px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  list-style-type: none;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/18px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 13px/18px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.profile-lab-results ul::-webkit-scrollbar {
+  width: 6px;
+  height: 941px;
+  background: #E3E4E6 0% 0% no-repeat padding-box;
+  border-radius: 3px; 
+}
+.profile-lab-results ul::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  margin-left: 1px;
+  height: 20px;
+  background-color: #707070;
+}
+.profile-lab-results ul li {
+  margin-top: 20px;
+  align-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.profile-lab-results ul li span {
+ margin-left: auto; 
+}
+.profile-lab-results ul li span img {
+  width: 20px;
+  height: 20px;  
+}
+.footer {
+  text-align: center;
+  font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  font: normal normal medium 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}

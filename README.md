@@ -1,0 +1,1 @@
+this project was done with React.js, Chart.js and some assistance fron chat GTP
